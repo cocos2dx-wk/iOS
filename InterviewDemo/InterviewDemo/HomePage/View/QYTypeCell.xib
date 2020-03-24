@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QYTypeCell" id="LVZ-lf-vlN" customClass="QYTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="94" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="94" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osl-GL-neN">
+                        <rect key="frame" x="0.0" y="0.0" width="94" height="90.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomePage_icon1.png" translatesAutoresizingMaskIntoConstraints="NO" id="i9K-sg-LV5">
+                                <rect key="frame" x="31" y="22.5" width="32" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="27" id="d2o-Fj-u98"/>
+                                    <constraint firstAttribute="width" priority="999" constant="32" id="yrL-TB-dNL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新车售卖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnp-DJ-GE4">
+                                <rect key="frame" x="20.5" y="64.5" width="53.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i9K-sg-LV5" firstAttribute="bottom" secondItem="Fnp-DJ-GE4" secondAttribute="top" constant="-15" id="Aln-mx-uHH"/>
+                            <constraint firstItem="i9K-sg-LV5" firstAttribute="centerX" secondItem="osl-GL-neN" secondAttribute="centerX" id="D99-E2-nX6"/>
+                            <constraint firstItem="Fnp-DJ-GE4" firstAttribute="centerX" secondItem="osl-GL-neN" secondAttribute="centerX" id="F4O-w6-Jc8"/>
+                            <constraint firstAttribute="bottom" secondItem="Fnp-DJ-GE4" secondAttribute="bottom" constant="10" id="ZdX-sx-czw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="osl-GL-neN" secondAttribute="bottom" id="5ul-N3-Ubf"/>
+                <constraint firstItem="osl-GL-neN" firstAttribute="leading" secondItem="LVZ-lf-vlN" secondAttribute="leading" id="alM-kM-kqd"/>
+                <constraint firstAttribute="trailing" secondItem="osl-GL-neN" secondAttribute="trailing" id="f0g-Nv-Tqk"/>
+                <constraint firstItem="osl-GL-neN" firstAttribute="top" secondItem="LVZ-lf-vlN" secondAttribute="top" id="tJq-7U-L4f"/>
+            </constraints>
+            <size key="customSize" width="50" height="50"/>
+            <connections>
+                <outlet property="m_imageHeightConstraint" destination="d2o-Fj-u98" id="ZFK-aS-dXZ"/>
+                <outlet property="m_imageWidthConstraint" destination="yrL-TB-dNL" id="4B2-Gl-Gks"/>
+                <outlet property="s_imageView" destination="i9K-sg-LV5" id="2ct-Jb-KRI"/>
+                <outlet property="s_titleLabel" destination="Fnp-DJ-GE4" id="vl0-no-JFs"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="HomePage_icon1.png" width="32" height="27"/>
+    </resources>
+</document>
